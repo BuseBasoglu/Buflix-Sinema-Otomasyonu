@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Turnuva));
             this.dataGridView_Turnuva = new System.Windows.Forms.DataGridView();
             this.combo_Adaylar = new System.Windows.Forms.ComboBox();
             this.btn_OyVer = new System.Windows.Forms.Button();
@@ -288,8 +289,9 @@
             this.Controls.Add(this.interstellar);
             this.Controls.Add(this.YesilYol);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Turnuva";
-            this.Text = "Form_Turnuva";
+            this.Text = "Haftanın Film Turnuvası";
             this.Load += new System.EventHandler(this.Form_Turnuva_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Turnuva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

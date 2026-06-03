@@ -12,8 +12,8 @@
       <FileName>Inceleme.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Film" />
       <Property Name="Kullanici" />
+      <Property Name="Film" />
     </ShowAsAssociation>
   </Class>
   <Class Name="otomasyonfilm.IzlemeListesi" Collapsed="true">
@@ -30,8 +30,8 @@
       <FileName>IzlemeOdasi.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Film" />
       <Property Name="KurucuKullanici" />
+      <Property Name="Film" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Mesajlar" />
@@ -54,9 +54,9 @@
       <FileName>Kullanici.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
+      <Property Name="IzlemeListeleri" />
       <Property Name="Incelemeler" />
       <Property Name="KurduguOdalar" />
-      <Property Name="IzlemeListeleri" />
       <Property Name="GonderdigiMesajlar" />
     </ShowAsCollectionAssociation>
   </Class>
@@ -83,14 +83,14 @@
   </Class>
   <Class Name="otomasyonfilm.Film" Collapsed="true">
     <Position X="6" Y="4.25" Width="1.25" />
-    <AssociationLine Name="TurnuvaAdaylari" Type="otomasyonfilm.TurnuvaAdayi">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.068" Y="0.118" />
-      </MemberNameLabel>
-    </AssociationLine>
     <AssociationLine Name="IzlemeListeleri" Type="otomasyonfilm.IzlemeListesi">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.077" Y="0.01" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="TurnuvaAdaylari" Type="otomasyonfilm.TurnuvaAdayi">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.118" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
@@ -101,8 +101,8 @@
       <Property Name="Kategori" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="Incelemeler" />
       <Property Name="IzlemeListeleri" />
+      <Property Name="Incelemeler" />
       <Property Name="TurnuvaAdaylari" />
     </ShowAsCollectionAssociation>
   </Class>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Coop));
             this.dataGridView_Odalar = new System.Windows.Forms.DataGridView();
             this.txt_OdaAdi = new System.Windows.Forms.TextBox();
             this.combo_Filmler = new System.Windows.Forms.ComboBox();
@@ -397,8 +398,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Coop";
-            this.Text = "Form_Coop";
+            this.Text = "Birlikte İzle (Co-op) Odaları";
             this.Load += new System.EventHandler(this.Form_Coop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Odalar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

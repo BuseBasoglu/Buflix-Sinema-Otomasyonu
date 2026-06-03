@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_IzlemeListesi));
             this.btn_AnaForm = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -274,7 +275,7 @@
             // inception
             // 
             this.inception.BackColor = System.Drawing.Color.Transparent;
-            this.inception.Image = global::otomasyonfilm.Properties.Resources.inception ;
+            this.inception.Image = global::otomasyonfilm.Properties.Resources.inception;
             this.inception.Location = new System.Drawing.Point(1130, 35);
             this.inception.Name = "inception";
             this.inception.Size = new System.Drawing.Size(272, 388);
@@ -369,8 +370,9 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_IzlemeListesi";
-            this.Text = "Form_IzlemeListesi";
+            this.Text = "İzleme Listesi Yönetimi";
             this.Load += new System.EventHandler(this.Form_IzlemeListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

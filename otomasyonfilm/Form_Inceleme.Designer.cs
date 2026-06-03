@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Inceleme));
             this.dataGridView_Incelemeler = new System.Windows.Forms.DataGridView();
             this.combo_AktifKullanici = new System.Windows.Forms.ComboBox();
             this.combo_Filmler = new System.Windows.Forms.ComboBox();
@@ -325,8 +326,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Inceleme";
-            this.Text = "Form_Inceleme";
+            this.Text = "İncelemeler ve Eleştirmenler";
             this.Load += new System.EventHandler(this.Form_Inceleme_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Incelemeler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

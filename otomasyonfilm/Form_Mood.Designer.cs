@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Mood));
             this.combo_RuhHali = new System.Windows.Forms.ComboBox();
             this.btn_FilmOner = new System.Windows.Forms.Button();
             this.dataGridView_Oneriler = new System.Windows.Forms.DataGridView();
@@ -153,8 +154,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Mood";
-            this.Text = "Form_Mood";
+            this.Text = "Ruh Haline Göre Film Öner";
             this.Load += new System.EventHandler(this.Form_Mood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Oneriler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
