@@ -23,18 +23,14 @@ namespace otomasyonfilm
 
             [Required]
             
-            [ForeignKey("Kategori")] // Filmin hangi kategoriye ait olduğunu (Foreign Key) bildiriyoruz[cite: 3].
+            [ForeignKey("Kategori")] 
             public int Kategori_Id { get; set; }
 
-            // Bu film tek bir kategoriye aittir diyoruz (Sanal bağlantı köprüsü)[cite: 3].
             public virtual Kategori Kategori { get; set; }
 
-            // Bu filmin birden fazla izleme listesinde kaydı olabilir diyoruz[cite: 3].
             public virtual ICollection<IzlemeListesi> IzlemeListeleri { get; set; }
             public virtual ICollection<Inceleme> Incelemeler { get; set; }
-        // Bir film turnuvaya aday gösterilebilir
             public virtual ICollection<TurnuvaAdayi> TurnuvaAdaylari { get; set; }
-        // Filmin hitap ettiği ruh hali (Örn: "Kafa Dağıtmalık", "Ters Köşe Yapan")
         [MaxLength(50)]
         public string Mood { get; set; } = "Belirtilmedi";
     }
